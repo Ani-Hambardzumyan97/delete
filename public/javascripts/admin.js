@@ -4,7 +4,7 @@ table.addEventListener("click",(e)=>{
   
     if(e.target.className=="deleteButton"){
         e.preventDefault()
-        let result=confirm("Are you Sure delete user")
+        let result=confirm("Do you want to delete the user?")
         if(result){
             fetch(`/admin/${e.target.id}`,{
                 method:"post",
